@@ -58,7 +58,7 @@ Tahap ini berfokus pada peningkatan tampilan dan performa saat jumlah data sudah
 
 ## Cara Instalasi Proyek
 1. Clone & Setup:
-   `
+   `https://github.com/lolavikav/-lab7WEB.git`
 
 2. Database:
    - Buat Database Bernama `lab_ci4`
