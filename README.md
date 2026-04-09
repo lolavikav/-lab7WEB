@@ -70,3 +70,36 @@ Tahap ini berfokus pada peningkatan tampilan dan performa saat jumlah data sudah
 
 4. Run:
    `php park serve`
+
+
+## Bukti Hasil Praktikum
+1. TAMPILAN HOME USER:
+<img width="1076" height="950" alt="Screenshot 2026-04-07 224047" src="https://github.com/user-attachments/assets/30e057d1-1081-4792-9e91-bc3b9d304273" />
+
+TAMPILAN ARTIKEL:
+<img width="1412" height="898" alt="Screenshot 2026-04-07 224114" src="https://github.com/user-attachments/assets/70cd4e3b-8285-4013-a2f8-ae2bf22fb442" />
+
+TAMPILAN ABOUT:
+<img width="1496" height="916" alt="Screenshot 2026-04-07 224133" src="https://github.com/user-attachments/assets/6342fcef-6b03-42b3-a4d3-0c1c330390e5" />
+
+TAMPILAN CONTACT:
+<img width="1619" height="937" alt="Screenshot 2026-04-07 224155" src="https://github.com/user-attachments/assets/226ca46b-bd58-4a9a-aa09-26a775ed3119" />
+
+2. DASHBOARD ADMIN:
+<img width="1417" height="944" alt="Screenshot 2026-04-07 232052" src="https://github.com/user-attachments/assets/12899036-080b-41ca-8244-920c3695e8b3" />
+
+TAMPILAN TAMBAH ARTIKEL:
+<img width="1373" height="930" alt="Screenshot 2026-04-07 224302" src="https://github.com/user-attachments/assets/222f48f6-b12a-4a27-b0c4-1604e3675fdd" />
+
+TAMPILAN UBAH ARTIKEL:
+<img width="1369" height="890" alt="Screenshot 2026-04-07 224323" src="https://github.com/user-attachments/assets/c0c369a8-004e-4d86-a9b1-68214e318496" />
+
+3.HALAMAN LOGIN:
+<img width="1139" height="887" alt="Screenshot 2026-04-07 224358" src="https://github.com/user-attachments/assets/1e3dd078-d422-4923-8d80-fd2e346b4412" />
+
+
+
+
+
+
+
