@@ -55,3 +55,18 @@ Tahap ini berfokus pada peningkatan tampilan dan performa saat jumlah data sudah
 - Pagination: penggunaan `findAll()` diganti dengan `paginate(10)` agar data ditampilkan per halaman, sehingga mencegah browser menjadi lambat ketika data sudah sangat banyak.
 - Searching: memanfaatkan metode `like()` pada query SQL untuk mencari dan memfilter judul artikel sesuai kata kunci yang dimasukkan user.
 - Persistence: menggunakan `pager->only(['q'])` supaya ketika user berpindah halaman (misalnya ke halaman 2), kata kunci pencarian tetap tersimpan dan hasilnya tidak hilang.
+
+## Cara Instalasi Proyek
+1. Clone & Setup:
+   `
+
+2. Database:
+   - Buat Database Bernama `lab_ci4`
+   - import file `.sql` yang bernama `database/`
+
+3. Environment:
+   - rename `env` menjadi `.env`
+   - atur `database.deafult.username` dan `database.deafult.password` sesuai xampp masing masing.
+
+4. Run:
+   `php park serve`
