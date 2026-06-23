@@ -1,105 +1,61 @@
-# -lab7WEB
-# Nama: Lola Seftyliani
-# Kelas:I24ID
-# NIM: 312410339
-# Matkul: Pemrograman Web
+# CodeIgniter 4 Framework
 
-# Praktikum Pemograman Web Sistem Informasi Portal Berita - Codelgniter 4
+## What is CodeIgniter?
 
-# Analisis Struktur Modul Praktikum
+CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
+More information can be found at the [official site](https://codeigniter.com).
 
-## Modul 1: Fondasi MVC & Routing
-Di tahap awal, yang jadi fokus utama adalah mengubah cara kerja dari PHP Native ke penggunaan Framework.
+This repository holds the distributable version of the framework.
+It has been built from the
+[development repository](https://github.com/codeigniter4/CodeIgniter4).
 
-Alurnya: saat user mengakses URL, permintaan tersebut akan diarahkan oleh `Routes.php` ke `Controller`, lalu Controller akan memanggil `View` untuk ditampilkan.
+More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
 
-Penerapannya: membuat `Controller` bernama `Page.php` yang digunakan untuk mengatur halaman statis seperti Home, About, dan Contact.
+You can read the [user guide](https://codeigniter.com/user_guide/)
+corresponding to the latest version of the framework.
 
-Hal penting yang dipelajari: logika bisnis sebaiknya tidak ditempatkan di dalam View, tapi dipisahkan agar struktur kode lebih rapi dan mudah dikelola.
+## Important Change with index.php
 
-## Modul 2: CRUD & Interaksi Database
-Di tahap ini, website dikembangkan menjadi lebih dinamis dengan menambahkan fitur pengelolaan data menggunakan MySQL.
+`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
+for better security and separation of components.
 
-Alurnya: dibuat `ArtikelModel`.php yang berfungsi sebagai penghubung antara aplikasi dengan tabel `artikel` di database.
+This means that you should configure your web server to "point" to your project's *public* folder, and
+not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
+framework are exposed.
 
-Fitur pada Admin:
+**Please** read the user guide for a better explanation of how CI4 works!
 
-- Create: menyediakan form untuk menambahkan data berita baru.
-- Read: menampilkan data dari database ke dalam bentuk tabel HTML.
-- Update: mengambil data berdasarkan ID untuk kemudian bisa diedit kembali.
-- Delete: menghapus data secara permanen dari database.
+## Repository Management
 
-Konfigurasi: melakukan pengaturan koneksi database melalui file `.env.`
+We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
+We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
+FEATURE REQUESTS.
 
-## Modul 3: Templating ( Viem Layout & View Cell)
-Pada tahap ini, diterapkan prinsip DRY (Don't Repeat Yourself) supaya kode lebih rapi dan tidak berulang-ulang.
+This repository is a "distribution" one, built by our release preparation script.
+Problems with it can be raised on our forum, or as issues in the main repository.
 
-Untuk tampilan, digunakan konsep View Layout dengan satu file utama `layout/main.php`. Halaman lain cukup mengisi bagian tertentu saja menggunakan `$this->extend()`, jadi tidak perlu membuat struktur dari awal lagi.
+## Contributing
 
-Selain itu, dibuat View Cell berupa komponen modular seperti `ArtikelTerkini`. Komponen ini bisa dipanggil di berbagai halaman tanpa harus menulis ulang query database di setiap Controller.
+We welcome contributions from the community.
 
-Manfaatnya, kalau ada perubahan pada bagian seperti Header atau Footer, cukup ubah di satu file saja tanpa harus edit semua halaman.
+Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
 
-## Modul 4: Autentikasi & Security Filter
-Tahap ini berfokus pada pengamanan area penting seperti Dashboard Admin agar tidak bisa diakses sembarangan.
+## Server Requirements
 
-Alurnya: proses login dilakukan dengan memvalidasi username dan password menggunakan Session.
+PHP version 8.2 or higher is required, with the following extensions installed:
 
-Pengamanan: diterapkan `AuthFilter.php.` Jika ada user yang mencoba mengakses halaman `/admin` tanpa login, sistem akan otomatis mengarahkan kembali ke halaman `/login.`
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [mbstring](http://php.net/manual/en/mbstring.installation.php)
 
-Database: dibuat tabel user untuk menyimpan data akun dan kredensial admin.
+> [!WARNING]
+> - The end of life date for PHP 7.4 was November 28, 2022.
+> - The end of life date for PHP 8.0 was November 26, 2023.
+> - The end of life date for PHP 8.1 was December 31, 2025.
+> - If you are still using below PHP 8.2, you should upgrade immediately.
+> - The end of life date for PHP 8.2 will be December 31, 2026.
 
-## Modul 5: Optimasi UX (Pagination & Searching)
-Tahap ini berfokus pada peningkatan tampilan dan performa saat jumlah data sudah banyak.
+Additionally, make sure that the following extensions are enabled in your PHP:
 
-- Pagination: penggunaan `findAll()` diganti dengan `paginate(10)` agar data ditampilkan per halaman, sehingga mencegah browser menjadi lambat ketika data sudah sangat banyak.
-- Searching: memanfaatkan metode `like()` pada query SQL untuk mencari dan memfilter judul artikel sesuai kata kunci yang dimasukkan user.
-- Persistence: menggunakan `pager->only(['q'])` supaya ketika user berpindah halaman (misalnya ke halaman 2), kata kunci pencarian tetap tersimpan dan hasilnya tidak hilang.
-
-## Cara Instalasi Proyek
-1. Clone & Setup:
-   `https://github.com/lolavikav/-lab7WEB.git`
-
-2. Database:
-   - Buat Database Bernama `lab_ci4`
-   - import file `.sql` yang bernama `database/`
-
-3. Environment:
-   - rename `env` menjadi `.env`
-   - atur `database.deafult.username` dan `database.deafult.password` sesuai xampp masing masing.
-
-4. Run:
-   `php park serve`
-
-
-## Bukti Hasil Praktikum
-1. TAMPILAN HOME USER:
-<img width="1076" height="950" alt="Screenshot 2026-04-07 224047" src="https://github.com/user-attachments/assets/30e057d1-1081-4792-9e91-bc3b9d304273" />
-
-TAMPILAN ARTIKEL:
-<img width="1412" height="898" alt="Screenshot 2026-04-07 224114" src="https://github.com/user-attachments/assets/70cd4e3b-8285-4013-a2f8-ae2bf22fb442" />
-
-TAMPILAN ABOUT:
-<img width="1496" height="916" alt="Screenshot 2026-04-07 224133" src="https://github.com/user-attachments/assets/6342fcef-6b03-42b3-a4d3-0c1c330390e5" />
-
-TAMPILAN CONTACT:
-<img width="1619" height="937" alt="Screenshot 2026-04-07 224155" src="https://github.com/user-attachments/assets/226ca46b-bd58-4a9a-aa09-26a775ed3119" />
-
-2. DASHBOARD ADMIN:
-<img width="1417" height="944" alt="Screenshot 2026-04-07 232052" src="https://github.com/user-attachments/assets/12899036-080b-41ca-8244-920c3695e8b3" />
-
-TAMPILAN TAMBAH ARTIKEL:
-<img width="1373" height="930" alt="Screenshot 2026-04-07 224302" src="https://github.com/user-attachments/assets/222f48f6-b12a-4a27-b0c4-1604e3675fdd" />
-
-TAMPILAN UBAH ARTIKEL:
-<img width="1369" height="890" alt="Screenshot 2026-04-07 224323" src="https://github.com/user-attachments/assets/c0c369a8-004e-4d86-a9b1-68214e318496" />
-
-3.HALAMAN LOGIN:
-<img width="1139" height="887" alt="Screenshot 2026-04-07 224358" src="https://github.com/user-attachments/assets/1e3dd078-d422-4923-8d80-fd2e346b4412" />
-
-
-
-
-
-
-
+- json (enabled by default - don't turn it off)
+- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
+- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
