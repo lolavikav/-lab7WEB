@@ -65,3 +65,45 @@ Masuk ke direktori ci4, kemudian jalankan server lokal:
 ```
 gunakan php spark serve port 8080
 ```
+# hasil praktium modul 1-7 
+# Hasil Praktikum
+1. Tampilan Home User
+<img width="638" height="428" alt="image" src="https://github.com/user-attachments/assets/db45d707-0fe4-4a52-acbe-49838d6d5b76" />
+
+2. Tampilan Artikel
+<img width="1433" height="826" alt="Screenshot 2026-04-07 220117" src="https://github.com/user-attachments/assets/82bba80b-72f8-4c8b-9308-4a2185768eec" />
+
+3. Tampilan About
+<img width="703" height="418" alt="image" src="https://github.com/user-attachments/assets/9f269e49-2053-4566-8c12-17d84efd4156" />
+
+4. Tampilan Contact
+<img width="683" height="474" alt="image" src="https://github.com/user-attachments/assets/25c65cad-eafc-4ba1-9aef-90217db9943c" />
+
+5. Dashboard Admin
+<img width="725" height="476" alt="image" src="https://github.com/user-attachments/assets/58100def-0874-4552-80fe-8bae224c4e8c" />
+
+6. Tampilan Tambh Artikel
+<img width="1373" height="930" alt="Screenshot 2026-04-07 224302" src="https://github.com/user-attachments/assets/da207f74-62b2-4d64-808a-349de5af9560" />
+
+7. Tampilan Ubah Artikel
+<img width="1369" height="890" alt="Screenshot 2026-04-07 224323" src="https://github.com/user-attachments/assets/a5f44f89-c62f-4cfc-8009-a2bb54cf41b9" />
+
+8. Fitur Pencarian
+<img width="456" height="151" alt="image" src="https://github.com/user-attachments/assets/5369a338-e1af-4e13-8d39-75d0f321d7ba" />
+
+9. Halaman Login
+<img width="727" height="446" alt="image" src="https://github.com/user-attachments/assets/0bfddd13-ec98-44a0-9b5d-7ef8a00499e2" />
+
+10. Daftar Artikel yg berisi label kategori
+<img width="632" height="476" alt="Screenshot 2026-06-25 192018" src="https://github.com/user-attachments/assets/a36282ba-91fe-4bcb-9c46-13313fab7c92" />
+
+11. Form tambah & Artikel yg berisi label kategori
+<img width="687" height="471" alt="image" src="https://github.com/user-attachments/assets/89dd48ba-676a-447b-bdf8-269f8631421f" />
+
+12. Edit kategori artikel
+<img width="606" height="467" alt="image" src="https://github.com/user-attachments/assets/1338ea1b-8312-48fd-9d93-7274bf9a5d6d" />
+<img width="576" height="356" alt="image" src="https://github.com/user-attachments/assets/42cf6e92-6b8c-438c-8ef4-9bb13a3c55e9" />
+
+13. Tampilan chose file untuk menggugah file gambar
+<img width="442" height="453" alt="image" src="https://github.com/user-attachments/assets/23df7346-b99a-4b5e-9acd-e05bc4c99793" />
+<img width="251" height="406" alt="image" src="https://github.com/user-attachments/assets/7341353f-2205-4941-b1af-5d0ecb514140" />
