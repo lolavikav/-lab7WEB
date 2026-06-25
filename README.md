@@ -68,8 +68,6 @@ gunakan php spark serve port 8080
 
 
 # hasil praktium modul 1-7 
-
-# Hasil Praktikum
 1. Tampilan Home User
 <img width="638" height="428" alt="image" src="https://github.com/user-attachments/assets/db45d707-0fe4-4a52-acbe-49838d6d5b76" />
 
@@ -110,3 +108,6 @@ gunakan php spark serve port 8080
 13. Tampilan chose file untuk menggugah file gambar
 <img width="442" height="453" alt="image" src="https://github.com/user-attachments/assets/23df7346-b99a-4b5e-9acd-e05bc4c99793" />
 <img width="251" height="406" alt="image" src="https://github.com/user-attachments/assets/7341353f-2205-4941-b1af-5d0ecb514140" />
+
+# Hasil Praktikum 8-14
+
