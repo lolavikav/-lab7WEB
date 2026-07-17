@@ -67,7 +67,7 @@ gunakan php spark serve port 8080
 ```
 
 
-# hasil praktium modul 1-7 
+# hasil praktium 
 1. Tampilan Home User
 <img width="638" height="428" alt="image" src="https://github.com/user-attachments/assets/db45d707-0fe4-4a52-acbe-49838d6d5b76" />
 
